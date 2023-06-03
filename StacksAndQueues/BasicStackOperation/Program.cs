@@ -10,7 +10,7 @@ namespace BasicStackOperation
     {
         static void Main(string[] args)
         {
-            int[] cmdArgs = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            int[] cmdArgs = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
             int countElementsForPush = cmdArgs[0];
             int elementsForPop = cmdArgs[1];
             int elementForSearching = cmdArgs[2];
