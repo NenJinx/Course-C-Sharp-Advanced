@@ -15,7 +15,7 @@ namespace BasicQueue
             int elementsForDequeu = cmdArgs[1];
             int elementForSearching = cmdArgs[2];
 
-            int[] numbers = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            int[] numbers = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
 
             Queue<int> queue = new Queue<int>(numbers);
 
