@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-Stack<int> boxWithClothes = new(Console.ReadLine().Split(' ').
+Stack<int> boxWithClothes = new(Console.ReadLine().Split(" ").
     Select(int.Parse));
 int theCapacityOfTheRack = int.Parse(Console.ReadLine());
 
