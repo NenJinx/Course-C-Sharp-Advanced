@@ -36,7 +36,7 @@ foreach (var parenthese in parentheses)
                 Console.WriteLine("NO");
                 return;
             }
-            break;
+            break; 
     }
 }
 
