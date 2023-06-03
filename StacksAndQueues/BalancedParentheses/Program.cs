@@ -1,5 +1,6 @@
 
 Stack<char> openParentheses = new();
+
 int count = 0;
 
 string parentheses = Console.ReadLine();
