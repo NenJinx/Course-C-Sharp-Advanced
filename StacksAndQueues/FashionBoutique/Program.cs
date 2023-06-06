@@ -9,7 +9,6 @@ int theCapacityOfTheRack = int.Parse(Console.ReadLine());
 int theSumOfTheClothes = 0;
 int countRacks = 0;
 
-
 while (boxWithClothes.Any())
 {
     if (theSumOfTheClothes + boxWithClothes.Peek() > theCapacityOfTheRack)
