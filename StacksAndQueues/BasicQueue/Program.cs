@@ -10,12 +10,12 @@ namespace BasicQueue
     {
         static void Main(string[] args)
         {
-            int[] cmdArgs = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            int[] cmdArgs = Console.ReadLine().Split(" ",StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
             int countElementsForEnqueu = cmdArgs[0];
             int elementsForDequeu = cmdArgs[1];
             int elementForSearching = cmdArgs[2];
 
-            int[] numbers = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            int[] numbers = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
 
             Queue<int> queue = new Queue<int>(numbers);
 
