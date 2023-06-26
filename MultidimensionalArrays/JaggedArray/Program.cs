@@ -4,7 +4,7 @@ int rows = int.Parse(Console.ReadLine());
 int[][] jaggedArray = new int[rows][];
 for (int row = 0; row < rows; row++)
 {
-    int[] cols = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries)
+    int[] cols = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries) 
         .Select(int.Parse).ToArray();
 
     jaggedArray[row] = cols;
