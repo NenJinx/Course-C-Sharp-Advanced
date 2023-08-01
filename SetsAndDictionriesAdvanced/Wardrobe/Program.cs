@@ -4,7 +4,7 @@ Dictionary<string, Dictionary<string, int>> colorsAndClothes = new();
 
 for (int i = 0; i < n; i++)
 {
-    string[] inputData = Console.ReadLine().Split(new string[] { " -> " }, StringSplitOptions.RemoveEmptyEntries).
+    string[] inputData = Console.ReadLine().Split(new string[] { " -> " }, StringSplitOptions.RemoveEmptyEntries). 
         ToArray();
     string color = inputData[0];
     List<string> clothes = inputData[1].Split(",").ToList();
