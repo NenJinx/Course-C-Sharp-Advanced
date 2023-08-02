@@ -4,7 +4,7 @@ int n = countNumbers[0];
 int m = countNumbers[1];
 HashSet<int> firstSet = new();
 HashSet<int> secondSet = new();
-int value = 0;
+int value = 0; 
 for (int i = 0; i < n; i++)
 {
     firstSet.Add(int.Parse(Console.ReadLine()));
