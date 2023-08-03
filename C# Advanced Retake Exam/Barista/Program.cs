@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Linq; 
 
 namespace Barista
 {
@@ -8,7 +8,6 @@ namespace Barista
     {
         static void Main(string[] args)
         {
-
             Queue<int> coffee = new Queue<int>(Console.ReadLine().Split(", ", StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse).ToArray());
             Stack<int> milk = new Stack<int>(Console.ReadLine().Split(", ", StringSplitOptions.RemoveEmptyEntries)
@@ -66,9 +65,9 @@ namespace Barista
                 Console.WriteLine($"Coffee left: none");
                 Console.WriteLine($"Milk left: {string.Join(", ", milk)}");
             }
-            foreach (var item in drinks.OrderBy(d => d.Value).ThenByDescending(d => d.Key))
+            foreach (var drink in drinks.OrderBy(d => d.Value).ThenByDescending(d => d.Key))
             {
-                Console.WriteLine($"{item.Key}: {item.Value}");
+                Console.WriteLine($"{drink.Key}: {drink.Value}");
             }
         }
     }
